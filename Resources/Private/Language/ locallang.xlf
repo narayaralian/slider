@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="" product-name="ny_slider">
+		<header/>
+		<body>
+			<trans-unit id="wizard.title">
+				<source>Slider</source>
+			</trans-unit>
+			<trans-unit id="wizard.description">
+				<source>A content slider based on fluid styled content.</source>
+			</trans-unit>
+			<trans-unit id="tca.tab.mySlider">
+				<source>Slider Elements</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

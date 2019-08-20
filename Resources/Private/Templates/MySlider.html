@@ -1,0 +1,22 @@
+<html data-namespace-typo3-fluid="true"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+<f:debug>{_all}</f:debug>
+<article>
+<h2>{data.header}</h2>
+{data.rowDescription }
+{data.bodytext}
+
+<f:for each="{images}" as="image">
+        <div class="slide">
+            <figure>
+                
+                <f:image image="{image.originalFile}" alt="{image.properties.alternative}" title="{image.properties.title}" width="{data.imagewidth}c" height="{data.imageheight}c"/>
+                    <figcaption>{image.properties.description}</figcaption>               
+                
+            </figure>
+        </div>       
+</f:for>
+
+</article>
+</html>

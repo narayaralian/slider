@@ -1,0 +1,27 @@
+lib.fluidContent {
+   templateRootPaths {
+      200 = EXT:ny_slider/Resources/Private/Templates/
+   }
+}
+
+tt_content {
+   my_slider < lib.fluidContent
+   my_slider {
+      templateName = MySlider.html
+      dataProcessing {
+         1 = NarYar\NySlider\DataProcessing\MySliderProcessor
+         1 {
+            useHere = theConfigurationOfTheDataProcessor
+            
+         }
+         2 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+         2 {
+            references {
+                            table = tt_content
+                            fieldName = image
+                        }
+                        as = images
+         }
+      }
+   }
+}
